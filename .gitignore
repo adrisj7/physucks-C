@@ -1,0 +1,10 @@
+
+### LaTeX Files ###
+*.aux
+*.dvi
+*.log
+
+*.pdf
+
+### Vim ###
+*.swp
