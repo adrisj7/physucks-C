@@ -6,6 +6,7 @@
    \maketitle
 
     \section*{Abstract}
+        %FIXME
         {\small 
             Abstract goes here
         }
@@ -38,19 +39,157 @@
             \item Pulley, attachable to the vertical bar (with clamps)
             \item Weights (of mass 5g, 10g, 20g, 50g, and 100g)
             \item String, attachable to weights
+            \item Paper clips
             \item Meter Stick
             \item Stopwatch
             \item Scale (electronic or triple beam balance)
         \end{itemize}
     \section{Methods}
         \subsection{Experiment Setup}
-            Fixate the vertical bar so it is perpendicular to the ground.
-            Attach the pulley to the vertical bar and run the string over
-            the pulley
+            Fixate the vertical bar perpendicular to the ground. Attach the 
+            pulley to the vertical bar and run the string over the pulley.
+            Tie a weight to each side of the string such that both weights are
+            suspended. If the weights have equal mass, they should hang in the
+            air. If one side has more mass, the string will move towards the
+            heavier mass, and the heavier mass will fall down while the lighter
+            accelerates upwards. 
+        \subsection{Accounting for Friction}
+            \par Experiments always have some kind of natural error, and this one
+            is no exception. The force of friction between the pulleys is
+            strong enough to have a measurable impact on our data.
+            However, it can be experimentally negated to
+            reduce the effect of friction on our measurements.
+            \par This is done by placing two weights of equal mass on both sides
+            of the pulley, and adding tiny masses (paper clips) to one side until
+            a short tug on one side makes the masses move at a constant velocity.
+            At this point, the force of gravity equals the force of the pulley's 
+            kinetic friction, and the effect of friction on the system is
+            negated
+
+        \subsection{Experiment 1: Constant Force}
+            After friction has been negated, the machine is used for a series of
+            tests. Each test start with an imbalance of the attwood machine masses,
+            with the heavier mass raised at a recorded height, which varies due to
+            the string stretching with heavier masses. The heavier mass is
+            then dropped, and the time between the drop and the weight's collision.
+            This experiment begins with two offset masses, and for each trial
+            both masses have extra weight added equally to both sides at 100g
+            intervals. This ensures that the net force of gravity is constant,
+            even when the masses change. This means that the force of friction 
+            from the pulley varies (due to the weight's higher normal force)
+            and it must be redetermined for every trial
+        \subsection{Experiment 2: Constant Mass}
+            These experiments are repeated again, but instead of keeping the force
+            of gravity constant, the net mass of the system is kept constant and
+            what changes is the inbalance of the system, by shifting weight from 
+            one mass to another. This means that the net mass is constant,
+            and the force of friction does not have to be redetermined for
+            every trial.
     \section{Data}
+        {\large Experiment 1: Constant Force}
+        \begin{center}
+    
+            \begin{tabular} {|c|c|c|c|c|}
+            \hline
+                Descending Mass $m_2$ (g) & 60 & 160 & 260 & 360 \\
+                Descending Mass $m_1$ (g) & 50 & 150 & 250 & 350 \\
+            \hline
+            \hline
+                Distance of travel $y$ (cm) & 57.5 & 57.5 & 55.0 & 54.0 \\
+            \hline
+            \hline
+                Trial 1 (s) & 1.02 & 2.09 & 2.76 & 3.53 \\
+                Trial 2 (s) & 1.26 & 2.04 & 2.71 & 3.55 \\
+                Trial 3 (s) & 1.06 & 2.00 & 2.75 & 3.56 \\
+                Average Time (s) & 1.11 & 2.04 & 2.74 & 3.55 \\
+            \hline
+                
+            \end{tabular}
+        \end{center}
 
+        {\large Experiment 2: Constant Mass}
+        \begin{center}
+
+            \begin{tabular} {|c c|}
+                \hline
+                Mass of frition weight $M_f$ & = 1.3 g \\
+                Total mass of system: $M_{net}$ & = 500.3 g \\
+                \hline
+            \end{tabular}
+
+            \begin{tabular} {|c|c|c|c|c|}
+            \hline %FIXME
+                Descending Mass $m_2$ (g) & 250.3 &  &  &  \\
+                Descending Mass $m_1$ (g) & 250 &  &  &  \\
+            \hline
+            \hline
+                Distance of travel $y$ (cm) &  &  &  &  \\
+            \hline
+            \hline
+                Trial 1 (s) & 2.66 & 1.73 & 1.39 & 1.02 \\
+                Trial 2 (s) & 2.55 & 1.74 & 1.34 & 1.15 \\
+                Trial 3 (s) & 2.55 & 1.73 & 1.39 & 1.02 \\
+                Average Time (s) & 2.59 & 1.73 & 1.36 & 1.06 \\
+            \hline
+                
+            \end{tabular}
+        \end{center}
     \section{Analysis}
-
+        \subsection{Equations}
+            \par The force of gravity exerted on any object is directly dependent on 
+            its mass. This follows the equation
+            \begin{equation}
+                F_g = mg
+            \end{equation}
+            where $F_g$ is the force of gravity, $m$ is the object mass and $g$ is
+            the acceleration due to gravity ($9.81 m/s^2$ on Earth) 
+            \par The two masses in the pulley system create a set of opposing 
+            gravitational forces. Because these forces directly oppose each other,
+            the net force of the system can be defined as such:
+            \begin{equation}
+                F_{net} = F_{g1} - F_{g2} = m_1g - m_2g
+            \end{equation}
+            Where $F_{net}$ is the net force, $m_1$ and $m_2$ are the masses of each 
+            weight, and $g$ is acceleration due to gravity.
+            \par This mathematical description is possible because the two masses
+            and their forces due to gravity behave like a one dimensional system 
+            because they are parallel to each other.
+            \par We can test Newton's Second law, $F = ma$, with the information
+            provided. We have three masses in play: the two weights, and a friction
+            counterweight. We know the net force of the system, and the acceleration
+            of the system. If we use newton's law to predict the acceleration of the
+            system, we can verify whether the law is accurate.
+            \begin{equation}
+                a = \frac{F_{net}}{m_{total}} = \frac{m_1g - m_2g - m_fg}{m_1 + m_2 + m_f}
+            \end{equation}
+            Both experiments use the same equations to predict and test Newton's 
+            Second Law.
+            \par To determine the acceleration of the body, we use the time and 
+            height that the masses fall from with kinematic equations for constant
+            acceleration. \\
+            We know that
+            \begin{equation}
+                h = \frac{1}{2}at^2
+            \end{equation}
+            Where $d$ is the starting height of the mass, $a$ is its acceleration,
+            and $t$ is the time elapsed as the mass travels from its height to
+            the ground at $h = 0$ \\
+            \par We can rewrite the equation as
+            \begin{equation}
+                a = \frac{2h}{t^2}
+            \end{equation}
+            to find the acceleration from our recorded data.
+        \subsection{Evaluation of Data}
+           Our percent error for experiment 1 falls within %FIXME,
+           while our percent error for experiment 2 falls within %FIXME.
+           This shows that our results are relatively accurate
     \section{Conclusion}
-
+        Overall, through a shockingly unexpected series of events,
+        Newton's Second Law does in fact appear to be correct due to
+        our consistent results and small experimental error. \\
+        The error in this experiment could be attributed to a variety of
+        factors. This includes the weakening and lengthening of the rope 
+        over time due to prolonged stress, and the limited accuracy
+        that paperclips provide as a friction mass.
+        
 \end{document}
