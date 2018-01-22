@@ -2,6 +2,11 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
+\usepackage{fontspec}
+\setmainfont[Path=/usr/share/fonts/truetype/calibri/,
+    BoldItalicFont=CALIBRIZ.ttf,
+    BoldFont      =CALIBRIB.ttf,
+    ItalicFont    =CALIBRII.ttf]{Calibri.ttf}
 \title{Lab 08: Hooke's Law and Simple Harmonic Motion}
 \author{Adris Jautakas, partnered with Matthew Kendall}
 \date{January 14, 2018}
@@ -75,37 +80,37 @@
         \includegraphics[width=\textwidth]{Graph1.png} \\ \\
     \section{Analysis}
         \subsection{Equations}
-            Hooke's law is described as $F_s = \mu_k \Delta x$ where $F_s$ is
+            Hooke's law is described as $F_s = -k \Delta x$ where $F_s$ is
             the force of the spring, $\Delta x$ is the elongation of the
             spring, and $\mu_x$ is the spring constant in $N/m$ for the spring,
             controlling how aggressive or powerful it is.
         \subsection{Evaluation of Data: Spring Elongation Spring Constant}
             For the spring experiment, the spring constant for each trial can be
-            determined using Hooke's Law, solving for $\mu_k$.
-            $\mu_k = \frac{F_s}{\Delta x}$. The calculated slope of the spring
-            graph is then defined by the average of all of all $\mu_k$'s.
+            determined using Hooke's Law, solving for $k$.
+            $k = -\frac{F_s}{\Delta x}$. The calculated slope of the spring
+            graph is then defined by the average of all of all $k$'s.
         \subsection{Evaluation of Data: Period of Oscillation}
             Applying Hooke's Law to harmonic motion, we can use the equation
-            $T_s = 2\pi \sqrt{ \frac{m}{\mu_k}}$ to iscolate for $\mu_k$ and 
-            get $\mu_k = \frac{4pi^2m}{{T_s}^2}$. We can expect $\mu_k$ to not
+            $T_s = 2\pi \sqrt{ \frac{m}{k}}$ to iscolate for $k$ and 
+            get $k = \frac{4pi^2m}{{T_s}^2}$. We can expect $k$ to not
             deviate too much from the experiment, and for the relationship between
             ${T_s}^2$ and $m$ to be linear. These are plotted in the graph above,
             showing a line of best fit with a slope of $1.44 \frac{s^2}{kg}$ and
             an $r^2$ deviation of 0.973 (pretty close), proving that k does in fact
             have a clear relationship with time that follows Hooke's Law.
-        \subsection{Deviating $\mu_k$}
-            An interesting point to note is that throughout our experiment, $\mu_k$
+        \subsection{Deviating $k$}
+            An interesting point to note is that throughout our experiment, $k$
             deviates at a constant rate with respect to $m$: The higher the mass,
-            the lower the $\mu_k$: This applies across our different experiments.
-            Plotting the graph of $\mu_k$ vs $m$ reveals what appears to be a linear
+            the lower the $k$: This applies across our different experiments.
+            Plotting the graph of $k$ vs $m$ reveals what appears to be a linear
             relationship up until a certain point when the mass excedes 500g.
     \section{Conclusion}
         Despite the significant error in our experiment, we've confirmed that
         surprisingly, Hooke was in fact correct and the laws of physics as we
-        know them do not need to be completely rewritten. Our $\mu_k$ values
+        know them do not need to be completely rewritten. Our $k$ values
         deviated and were responsible for our error, and they deviated at a
         constant rate which suggests that there is an extra physical property at
         play. Perhaps the spring has some kind of friction or dampening that gives
-        it higher resistance when it's pulled by a small ammount, making $\mu_k$
+        it higher resistance when it's pulled by a small ammount, making $k$
         significantly larger at short displacements.
 \end{document}
