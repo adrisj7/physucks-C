@@ -1,0 +1,316 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphics}
+\usepackage{fontspec}
+\setmainfont[Path=/usr/share/fonts/truetype/calibri/,
+    BoldItalicFont=CALIBRIZ.ttf,
+    BoldFont      =CALIBRIB.ttf,
+    ItalicFont    =CALIBRII.ttf]{Calibri.ttf}
+
+\title{Lab 06: Conservation of Linear Momentum}
+\author{Adris Jautakas, partnered with Matthew Kendall}
+\date{January 23, 2018}
+\begin{document}
+   \maketitle
+
+    \pagebreak
+
+    \section*{Abstract}
+        \begin{quote}
+        {\textit {\small 
+            This experiment explores the conservation of linear momentum through
+            carts and air tracks. The experiment simulated a collision between
+            two low-friction bodies in attempts to verify that their momentum
+            is conserved throughout their collision. Despite a considerable
+            error, it was clear that the conservation of linear momentum
+            holds up in real life.
+        } }
+        \end{quote}
+
+    \section{Introduction}
+        In an ideal physical setting, the linear momentum of any system is conserved.
+        This isn't always readily apparent in the real world due to friction, but
+        it can be observed in a low friction environment. This experiment involves
+        setting up two cars on an air track and pushing them on a collision trajectory
+        to observe their behavior as they collide and transfer momentum. We measure
+        the effect that an impact has on each object's momentum to confirm that it
+        is conserved in the system.
+    \section{Materials}
+        \begin{itemize}
+            \item Air Track
+            \item Three spring loaded Carts: Two of similar mass
+            \item Two Artificial barriers / walls attachable to table
+            \item Four Timers
+            \item Meterstick
+            \item Scale
+        \end{itemize}
+    
+    \section{Methods}
+        \subsection{Experiment Setup}
+            Place the track flat on a table. Attach artificial barriers/walls to
+            the table such that they are perpendicular to and at both end of the 
+            track. Then place a spring loaded cart against the wall with the spring
+            pointing at the wall.
+        \subsection{Experimental Setup Trial}
+            For the trial run, no extra setup is needed.
+        \subsection{Experimental Setup A: Stationary cart}
+            Place a second cart in the middle of the track at a recorded distance.
+        \subsection{Experimental Setup B: Equal and opposite motion}
+            Instead of placing the second cart in the middle of the track, place
+            it against the other side of the track, spring pointed at the other
+            wall.
+
+        \subsection{Procedure: Trial and measurements}
+            \par First find the mass of all carts with the scale.
+            \par After setting up the experiment, a trial run will be conducted to
+            determine the method for measuring change in time. As the carts move,
+            every experiment should measure the time it takes for them to travel
+            a certain distance, and the method for doing this varies. One method
+            involves four observers, each measuring the time it takes for a cart
+            to cross an individual point from the start, and the other method
+            has two observers measure the duration it takes a cart to travel
+            between two points. Both measurement methods are measuring the same
+            thing, but their accuracy may differ.
+            \par For the trial run, a cart's velocity must be detected using both
+            methods of experiment. As the cart passes through a set of defined
+            points, the time it takes for the cart to pass through each point is
+            determined. After running the trials, determine which method results
+            in the most consistent and accurate reading for velocity and use
+            that method for the remainder of the experiments.
+        \subsection{Procedure A: Stationary Cart}
+            \par After completing Experimental Setup A, launch the cart from the 
+            wall and read the time measurements. These measurements should tell
+            the speed of both carts before and after their collision, and they
+            should be read before and after their collisions (the stationary
+            cart is assumed to have 0 velocity before collision). This is tested
+            both with two carts of equal mass and carts of inequal mass.
+        \subsection{Procedure B: Equal and opposite motion}
+            \par After completing Experimental Setup B, launch both carts at the
+            same time, opposite to each other. Record their times both before
+            and after their collisions to grab their veolcities before and after
+            their collisions.
+
+        \section{Data}
+
+            % Trial data table
+            {\large Trial run}
+            \begin{center}
+                \begin{tabular} {|c|c|c|}
+                \hline
+                     & Method A & Method B \\
+                \hline
+                    \begin{tabular} {c}
+                        car mass (g) \\
+                    \hline
+                        \begin{tabular} {c|c}
+                            $m_1$ & 680 \\
+                        \hline
+                            $m_2$ & 685 \\
+                        \hline
+                        \end{tabular}
+                    \end{tabular}
+                &
+                    \begin{tabular} {c|c|c|c|c|c|c}
+                        $t_1$ (s) & $t_2$ (s) & $\Delta t_{12}$ (s) & $t_3$ (s) & $t_4$ (s) & $\Delta t_{34}$ & $\%$ Diff \\                \hline
+                        1.3 & 2.8 & 1.5 & 1.7 & 3.5 & 1.8 & $9\%$ \\
+                    \hline
+                        1.3 & 2.74 & 1.44 & 1.6 & 3.2 & 1.6 & $5.3\%$ \\
+                    \hline
+                    \end{tabular}
+                &
+                    \begin{tabular} {c|c|c}
+                        $\Delta t_{12}$ & $\Delta t_{34}$ & $\%$ Diff \\
+                    \hline
+                        0.21 & 0.15 & $7.60\%$ \\
+                    \hline
+                        0.22 & 0.27 & $7.20\%$ \\
+                    \hline
+                    \end{tabular} \\
+                    \hline
+                \end{tabular}
+            \end{center}
+
+            % Table 1
+            {\large Experiment 1: $m_1 = m_2$ and $v_{2_i} = 0$}
+            \begin{center}
+                \begin{tabular} {|c|c|c|}
+                    \hline
+                    \begin{tabular}{c}
+                        Trial \\ \hline 1 \\ \hline 2 \\ \hline 3 \\ \hline
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        Before Collision \\ \hline $m_1$ \\ \hline
+                        \begin{tabular}{c|c|c}
+                            $\Delta t_1$ & $v_{1_i}$ & $p_{1_i}$ \\
+                        \hline
+                            3.10 & 0.32 & 0.22 \\
+                        \hline
+                            2.70 & 0.37 & 0.25 \\
+                        \hline
+                            3.40 & 0.29 & 0.20 \\
+                        \end{tabular}
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        After Collision \\ \hline $m_2$ \\ \hline
+                        \begin{tabular}{c|c|c|c}
+                            $\Delta t_2$ & $v_{2_f}$ & $p_{2_f}$ & $\%$ Diff \\
+                        \hline
+                            3.40 & 0.29 & 0.20 & $4.80\%$ \\
+                        \hline
+                            3.30 & 0.30 & 0.21 & $8.7\%$ \\
+                        \hline
+                            3.70 & 0.27 & 0.19 & $2.60\%$ \\
+                        \end{tabular}
+                    \end{tabular} \\
+                    \hline
+                \end{tabular}
+            \end{center}
+
+            % Table 2
+            {\large Experiment 2: $m_3 > m_1$ and $v_{3_i} = 0$}
+            \begin{center}
+                \begin{tabular} {|c|c|c|}
+                    \hline
+                    \begin{tabular}{c}
+                        Trial \\ \hline 1 \\ \hline 2 \\ \hline 3 \\ \hline
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        Before Collision \\ \hline $m_1$ \\ \hline
+                        \begin{tabular}{c|c|c}
+                            $\Delta t_1$ & $v_{1_i}$ & Total $p$ \\
+                        \hline
+                            3.20 & 0.31 & 0.21 \\
+                        \hline
+                            3.10 & 0.32 & 0.22 \\
+                        \hline
+                            2.70 & 0.37 & 0.25 \\
+                        \end{tabular}
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        After Collision \\ \hline $m_2$ \\ \hline
+                        \begin{tabular}{c|c|c|c|c|c}
+                            $\Delta t_{1_f}$ & $v_{1_f}$ & $p_{1_f}$ & $\Delta t_{3_f}$ & $v_{3_f}$ & $p_{3_f}$ \\
+                        \hline
+                            1.30 & 0.77 & 0.20 & 2.20 & 0.61 & 0.54 \\
+                        \hline
+                            1.60 & 0.63 & 0.18 & 1.90 & 0.92 & 0.81 \\
+                        \hline
+                            2.20 & 0.45 & 0.24 & 2.10 & 0.76 & 0.71 \\
+                        \end{tabular}
+                    \end{tabular} \\
+                    \hline
+                \end{tabular}
+            \end{center}
+
+            % Table 3
+            {\large Experiment 3: $m_1 = m_2$ and $v$ is opposite}
+            \\
+            BEFORE collision
+            \begin{center}
+                \begin{tabular} {|c|c|c|}
+                    \hline
+                    \begin{tabular}{c}
+                        Trial \\ \hline 1 \\ \hline 2 \\ \hline 3 \\ \hline
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        $m_1$ \\ \hline
+                        \begin{tabular}{c|c|c}
+                            $\Delta t_1$ & $v_{1_i}$ & $p_{1_i}$ \\
+                        \hline
+                            2,80 & 0.36 & 0.24 \\
+                        \hline
+                            2.9 & 0.34 & 0.23 \\
+                        \hline
+                            3.20 & 0.31 & 0.21 \\
+                        \end{tabular}
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        $m_2$ \\ \hline
+                        \begin{tabular}{c|c|c}
+                            $\Delta t_2$ & $v_{2_f}$ & $p_{2_f}$ \\
+                        \hline
+                            4.20 & 0.24 & 0.31 \\
+                        \hline
+                            3.70 & 0.27 & 0.27 \\
+                        \hline
+                            2.90 & 0.34 & 0.34 \\
+                        \end{tabular}
+                    \end{tabular} \\
+                    \hline
+                \end{tabular}
+            \end{center}
+            
+            AFTER collision
+            \begin{center}
+                \begin{tabular} {|c|c|c|}
+                    \hline
+                    \begin{tabular}{c}
+                        Trial \\ \hline 1 \\ \hline 2 \\ \hline 3 \\ \hline
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        $m_1$ \\ \hline
+                        \begin{tabular}{c|c|c}
+                            $\Delta t_1$ & $v_{1_i}$ & $p_{1_i}$ \\
+                        \hline
+                            2.5 & 0.4 & 0.21 \\
+                        \hline
+                            2.3 & 0.43 & 0.26 \\
+                        \hline
+                            3.1 & 0.42 & 0.33 \\
+                        \end{tabular}
+                    \end{tabular}
+                &
+                    \begin{tabular}{c}
+                        $m_2$ \\ \hline
+                        \begin{tabular}{c|c|c}
+                            $\Delta t_2$ & $v_{2_f}$ & $p_{2_f}$ \\
+                        \hline
+                            2.5 & 0.4 & 0.34 \\
+                        \hline
+                            2.7 & 0.37 & 0.37 \\
+                        \hline
+                            3.4 & 0.29 & 0.43 \\
+                        \end{tabular}
+                    \end{tabular} \\
+                    \hline
+                \end{tabular}
+            \end{center}
+
+    \section{Analysis}
+        \subsection{Equations}
+            Linear momentum is described mathematically as $p = mv$ where $m$
+            is an object's mass and $v$ is its velocity. The conservation
+            of momentum states that the net momentum in a system remains
+            constant, which means it doesn't change, so $\Delta p = o$. In
+            the case of the masses, the net $p$ can be described as
+            $m_1 v_1 + m_2 v_2$ which arrives at the equation $m_{1_i} +
+            m_{2_i} = m_{1_f} + m_{2_f}$ where $i$ subscript means initial
+            and $f$ subscript means final. If the system conserves momentum,
+            the sum of its momentums will remain constant
+        \subsection{Evaluation of Data}
+            \par Upon running the trial, the mean percent errors were very similar
+            for both trials. However, the error in Method B (where there were 
+            two observers measuring time between two points) was a lot more
+            centralized and less fluctuating, making it slightly more reliable,
+            which made it our method of choice.
+            \par For each experiment, the total momentum should be constant. This
+            means that $p_{1_i}+ p_{2_i}$ should equal $p_{1_f} + p_{2_f}$.
+            \par The percent error in this experiment can be due to a variety of
+            factors, most notably the inelasticity of the carts as they collide
+            and the friction between the track and its wheels that adds up. These
+            may have tampered and decreased the energy of the system, affecting
+            our measurements.
+    \section{Conclusion}
+        Overall, it seems like this experiment can verify the conservation of momentum
+        is in fact a fesible reality. Throughout our experiments, our largest percent
+        difference between our initial and final total momentum was 16\%, which is
+        considerable but it does not completely refute our claim.
+        
+\end{document}
