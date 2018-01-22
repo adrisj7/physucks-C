@@ -1,15 +1,28 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{fontspec}
+\setmainfont[Path=/usr/share/fonts/truetype/calibri/,
+    BoldItalicFont=CALIBRIZ.ttf,
+    BoldFont      =CALIBRIB.ttf,
+    ItalicFont    =CALIBRII.ttf]{Calibri.ttf}
 \title{Lab 04: Friction}
 \author{Adris Jautakas, partnered with Matthew Kendall}
 \date{November 30, 2017}
 \begin{document}
     \maketitle
 
+    \pagebreak
+
     \section*{Abstract}
         \begin{quote}
         {\textit {\small 
-            Abstract goes here
+            The following lab investigates friction through a series of tests 
+            involving sliding blocks against a surface. We evaluated how 
+            friction is proportionally dependent on its normal force, and how
+            the friction coefficients $\mu_s$ and $\mu_k$ can be determined
+            and evaluated in such a system.
         } }
         \end{quote}
 
@@ -36,7 +49,7 @@
         surfaces they slide on.
     \section{Materials}
         \begin{itemize}
-            \item Wooden block with hook
+            \item Wooden block with hook and rough sandpaper surface on one side
             \item Weight hanger and set of weights
             \item String with loops on both ends for hooks
             \item Board with adjustable angle
@@ -70,7 +83,21 @@
             \par Repeat the procedures for computing $\mu_s$ and $\mu_k$ on the
             inclined board, and repeat for multiple angles of elevation.
     \section{Data}
-       hi
+       
+        {\large Experiment for computing $\mu_s$ } \\
+        \includegraphics[scale=0.75]{GraphStatic1.png} \\ \\ 
+        {\large Experiment for computing $\mu_k$ on rough sandpaper surface } \\
+        \includegraphics[scale=0.75 ]{GraphKinetic1.png} \\ \\
+        {\large Mass vs Normal Force and Frictional Force for sandpaper} \\ 
+        \includegraphics[scale=0.75]{GraphWeightVsFriction1.png} \\ \\
+        {\large Experiment for computing $\mu_k$ on smoother wooden surface} \\
+        \includegraphics[width=\textwidth]{GraphKinetic2.png} \\ \\
+        {\large Mass vs Normal Force and Frictional Force for wood} \\ 
+        \includegraphics[scale=0.75]{GraphWeightVsFriction2.png} \\ \\
+        {\large Experiment for determining sliding angle and $\mu_s$} \\
+        \includegraphics[scale=0.6]{DataTable3.png} \\ \\
+
+
     \section{Analysis}
         \subsection{Equations}
             \par To determine $\mu_s$, we use the scenario where the force of
@@ -103,11 +130,15 @@
             \begin{equation}
                 F_{gw} = m_w * g
             \end{equation}
-            Where STUFFFF
             \par In our experiment, $F_{\parallel}$ combined with $F_k$ or $F_s$
-            are equal to $F_{gw}$
-        \subsection{Evaluation of Data}
-            hi
+            are equal to $F_{gw}$ which lets us iscolate for $\mu_s$.
     \section{Conclusion}
-        hi
+        Our data gave us a relatively consistent reading on $\mu_k$ and $\mu_s$ which
+        indicates that the fundamental laws of physics that are well understood
+        and accepted as fact are, surprisingly, accurate. Our deviation of $\mu_k$
+        gives us a possible error of around 5\%, and our deviation of $\mu_s$ gives
+        us an error of about 7\%. This error could have been caused by the tape
+        markings on the platform that the blocks slid over, and it can also be
+        caused by friction in the pulley that we used to measure the force of the
+        sliding masses.
 \end{document}
